@@ -1,9 +1,8 @@
 import { Check, CalendarDays, PersonStanding } from "lucide-react"
 import Navbar from '@/app/Navbar/page';
 import Footer from '@/app/footer/page';
-import Table from '@/app/HomeComponents/tabela/page';
+import Tabela from "@/app/HomeComponents/tabela/page";
 import Chart from '@/app/HomeComponents/chart/page'
-import { Separator } from "@/components/ui/separator"
 import { Progress } from "@/components/ui/progress"
 import {
     Card,
@@ -13,7 +12,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import Link from "next/link";
-import Tabela from "@/app/HomeComponents/tabela/page";
+
 
 
 export default function Home() {

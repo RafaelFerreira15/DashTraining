@@ -3,8 +3,6 @@
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
@@ -12,8 +10,6 @@ import { CartesianGrid, Line, LineChart, XAxis, ResponsiveContainer, Tooltip  } 
 import {
     ChartConfig,
     ChartContainer,
-    ChartTooltip,
-    ChartTooltipContent,
 } from "@/components/ui/chart"
 
 export default function Chart(){
