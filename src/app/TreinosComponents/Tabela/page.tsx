@@ -14,7 +14,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import AlertaDialog from "../AlertaDialog/page";
-import { EditarDialog } from "../EditarDialog/page";
+import EditarDialog from "../EditarDialog/page";
 
 const exercises = [
     {
