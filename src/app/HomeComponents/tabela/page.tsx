@@ -12,7 +12,7 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-  } from "@/components/ui/table"
+} from "@/components/ui/table"
 
 const exercises = [
 {
@@ -103,7 +103,7 @@ export default function Tabela() {
                             <TableHead className="w-[100px]">Exercícios</TableHead>
                             <TableHead>Grupo Muscular </TableHead>
                             <TableHead>Séries</TableHead>
-                            <TableHead>Repetições</TableHead>
+                            <TableHead>Carga</TableHead>
                             <TableHead className="text-right">Data</TableHead>
                             </TableRow>
                         </TableHeader>
