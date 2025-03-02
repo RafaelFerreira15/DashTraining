@@ -35,7 +35,7 @@ export default function Navbar(){
                 <div className="flex items-center justify-around w-6/12 ">
                     <div className="flex m-2 items-center gap-1"><House className="w-6"/><Link href="/Home" className="text-sm">Home</Link></div>
                     <div className="flex m-2 items-center gap-1"><Dumbbell  className="w-6"/><Link href="/Treinos" className="text-sm">Treinos</Link></div>
-                    <div className="flex m-2 items-center gap-1"><ChartSpline  className="w-6"/><Link href="/Home" className="text-sm">Estatisticas</Link></div>
+                    <div className="flex m-2 items-center gap-1"><ChartSpline  className="w-6"/><Link href="/Estatistica" className="text-sm">Estatisticas</Link></div>
                     <div className="flex m-2 items-center  gap-1"><Cog  className="w-6"/><Link href="/Home" className="text-sm">Configurações</Link></div>
                 </div>
 
@@ -84,7 +84,7 @@ export default function Navbar(){
                         <div className="flex-col items-center justify-around w-10/12 m-4 mx-6 p-2 px-5 gap-8">
                             <div className="flex m-4 gap-2"><House className="w-12"/><Link href="/Home" className="text-xl">Home</Link></div>
                             <div className="flex m-4 gap-2"><Dumbbell  className="w-12"/><Link href="/Treinos" className="text-xl">Treinos</Link></div>
-                            <div className="flex m-4 gap-2"><ChartSpline  className="w-12"/><Link href="/Home" className="text-xl">Estatisticas</Link></div>
+                            <div className="flex m-4 gap-2"><ChartSpline  className="w-12"/><Link href="/Estatistica" className="text-xl">Estatisticas</Link></div>
                             <div className="flex m-4  gap-2"><Cog  className="w-12"/><Link href="/Home" className="text-xl">Configurações</Link></div>
                         </div>
                         <div className="flex self-center justify-center">
