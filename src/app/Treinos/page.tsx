@@ -11,6 +11,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import { PersonStanding, Repeat } from "lucide-react";
+import FormCard from "../TreinosComponents/FormCard";
 
 export default function Treinos (){
     return(
@@ -23,7 +24,9 @@ export default function Treinos (){
             </div>
 
             <Tabela />
-            <Grafico/>
+            <div className="m-auto">
+                <Grafico />
+            </div>
 
             <div>
                 <div className=" grid grid-cols-1 md:grid-cols-2 m-12">
@@ -53,6 +56,7 @@ export default function Treinos (){
                 </div>
             </div>
 
+            <FormCard />
             <Footer />
         </section>
     )

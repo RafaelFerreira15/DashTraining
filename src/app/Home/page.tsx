@@ -48,7 +48,7 @@ export default function Home() {
                         <p className="w-full mt-6 pl-7">Horário: 18h </p>
                     </CardContent>
                     <CardFooter>
-                        <Link href="/home" className="text-sky-800"> Ver detalhes</Link>
+                        <Link href="/Estatistica" className="text-sky-800"> Ver detalhes</Link>
                     </CardFooter>
                 </Card>
                 <Card className=" flex flex-col m-4 mx-12 md:mx-4 w-auto items-center ">
@@ -60,7 +60,7 @@ export default function Home() {
                         <p className="w-full mt-6 pl-3">Volume total: 12.300 kg</p>
                     </CardContent>
                     <CardFooter>
-                    <Link href="/home" className="text-sky-800"> Ver estatísticas</Link>
+                    <Link href="/Estatistica" className="text-sky-800"> Ver estatísticas</Link>
                     </CardFooter>
                 </Card>
 

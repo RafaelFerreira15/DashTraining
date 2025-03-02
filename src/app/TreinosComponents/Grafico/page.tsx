@@ -35,7 +35,7 @@ const chartConfig = {
 
 export default function Grafico() {
 	return (
-		<Card className="m-12">
+		<Card className="m-12 sm:m-auto max-w-xl justify-self-center">
 			<CardHeader>
 				<CardTitle>Volume de Treino (kg)</CardTitle>
 			</CardHeader>
