@@ -1,7 +1,7 @@
-import Footer from "../footer/page";
-import Tabela from "../TreinosComponents/Tabela/page";
-import Grafico from "../TreinosComponents/Grafico/page";
-import Navbar from "../Navbar/page";
+import Tabela from "@/app/(Components)/TreinosComponents/TabelaTreino";
+import Grafico from "@/app/(Components)/TreinosComponents/GraficoTreino";
+import Footer from "@/app/(Components)/Footer";
+import Navbar from "@/app/(Components)/Navbar";
 
 import {
     Card,
@@ -11,7 +11,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import { PersonStanding, Repeat } from "lucide-react";
-import FormCard from "../TreinosComponents/FormCard";
+import FormCard from "../../(Components)/TreinosComponents/FormCard";
 
 export default function Treinos (){
     return(

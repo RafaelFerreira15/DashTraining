@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 
-export default function AlertaDialog() {
+const AlertaDialogTreino = () => {
 	return (
 		<AlertDialog>
 			<AlertDialogTrigger asChild>
@@ -35,3 +35,5 @@ export default function AlertaDialog() {
 		</AlertDialog>
 	);
 }
+
+export default AlertaDialogTreino;

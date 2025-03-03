@@ -2,11 +2,11 @@
 
 import { PersonStanding, Clock, Repeat } from "lucide-react"
 import { useState } from "react";
-import Footer from "../footer/page";
-import Navbar from "../Navbar/page";
+import Footer from "@/app/(Components)/Footer";
+import Navbar from "@/app/(Components)/Navbar";
 import { Slider } from "@/components/ui/slider";
-import Cartao from "../EstatComponents/Cartao";
-import Pizza from "../EstatComponents/Pizza/page";
+import Cartao from "../../(Components)/EstatComponents/Cartao";
+import Pizza from "../../(Components)/EstatComponents/Pizza";
 import {
     Card,
     CardContent,

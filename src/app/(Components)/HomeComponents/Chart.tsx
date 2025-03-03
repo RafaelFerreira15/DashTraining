@@ -12,7 +12,7 @@ import {
     ChartContainer,
 } from "@/components/ui/chart"
 
-export default function Chart(){
+const ChartHome = () => {
 
     const chartData = [
         { month: "Janeiro", Peso: 152 },
@@ -74,3 +74,5 @@ export default function Chart(){
         </Card>
     )
 }
+
+export default ChartHome;

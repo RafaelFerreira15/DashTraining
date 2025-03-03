@@ -1,6 +1,6 @@
 import { Input } from "@/components/ui/input";
-import Footer from "../footer/page";
-import Navbar from "../Navbar/page";
+import Footer from "@/app/(Components)/Footer";
+import Navbar from "@/app/(Components)/Navbar";
 import {
     Card,
     CardContent,

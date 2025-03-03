@@ -58,7 +58,7 @@ const chartConfig = {
 	},
 } satisfies ChartConfig;
 
-export default function Pizza() {
+const Pizza = () => {
 	return (
 		<Card className="flex flex-col m-12">
 			<CardHeader className="items-center pb-0">
@@ -112,3 +112,5 @@ export default function Pizza() {
 		</Card>
 	);
 }
+
+export default Pizza;

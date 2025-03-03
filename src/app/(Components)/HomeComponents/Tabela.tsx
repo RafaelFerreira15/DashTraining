@@ -87,7 +87,7 @@ const exercises = [
 },
 ];
 
-export default function Tabela() {
+const TabelaHome = () => {
     return (
     <section>
         <div>
@@ -126,3 +126,5 @@ export default function Tabela() {
     </section>
     );
 }
+
+export default TabelaHome;

@@ -4,7 +4,7 @@ import { Cog, MoonStar } from "lucide-react"
 import Link from "next/link"
 
 
-export default function Footer (){
+const Footer = () => {
     return(
         <section>
             <Separator className="my-4" />
@@ -21,3 +21,5 @@ export default function Footer (){
         </section>
     )
 }
+
+export default Footer;

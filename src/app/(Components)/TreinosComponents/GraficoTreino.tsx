@@ -33,7 +33,7 @@ const chartConfig = {
 	},
 } satisfies ChartConfig;
 
-export default function Grafico() {
+const GraficoTreino = () => {
 	return (
 		<Card className="m-12 sm:m-auto max-w-xl justify-self-center">
 			<CardHeader>
@@ -67,3 +67,5 @@ export default function Grafico() {
 		</Card>
 	);
 }
+
+export default GraficoTreino;

@@ -23,7 +23,7 @@ import {
 } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
 
-export default function Navbar(){
+const Navbar = () => {
     return(
         <nav>
             <section className="flex items-center justify-around gap-2 mt-4 hidden md:flex ">
@@ -120,3 +120,5 @@ export default function Navbar(){
         </nav>
     )
 }
+
+export default Navbar;

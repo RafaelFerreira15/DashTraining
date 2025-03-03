@@ -13,8 +13,9 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import AlertaDialog from "../AlertaDialog/page";
-import EditarDialog from "../EditarDialog/page";
+
+import AlertaDialog from "@/app/(Components)/TreinosComponents/AlertaDialogTreino";
+import EditarDialog from "@/app/(Components)/TreinosComponents/EditarDialogTreino";
 
 const exercises = [
     {
@@ -89,7 +90,7 @@ const exercises = [
     },
     ];
 
-export default function Tabela (){
+const TabelaTreino = () => {
     return (
 		<section>
 			<div>
@@ -146,3 +147,5 @@ export default function Tabela (){
 		</section>
 	);
 }
+
+export default TabelaTreino;
