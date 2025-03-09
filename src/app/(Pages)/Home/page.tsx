@@ -19,7 +19,7 @@ export default function Home() {
 
 
     return (
-        <section className='w-full h-full bg-red-700'>
+        <section className='w-full h-full'>
             <Navbar />
             <div className=" flex flex-col items-center justify-center w-full">
                 <h1 className="text-5xl m-4">Bem vindo, Rafael !</h1>
