@@ -1,3 +1,4 @@
+"use client"
 import { Input } from "@/components/ui/input";
 import Footer from "@/app/(Components)/Footer";
 import Navbar from "@/app/(Components)/Navbar";
@@ -5,12 +6,15 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { useAtom } from 'jotai';
+import { userName, userEmail } from "@/app/(store)/atoms";
+import { Label } from "@/components/ui/label";
+
 
 {/*1. Cabeçalho da Página:
 
@@ -59,6 +63,21 @@ Estrutura geral:
 */}
 
 export default function Configuracoes() {
+    const [nome, setNome] = useAtom(userName);
+    const [email, setEmail] = useAtom(userEmail);
+
+    const ReguardarInfos = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        // Verificar se os campos estão preenchidos
+        if (nome && email) {
+            console.log("Nome:", nome);
+            console.log("Email:", email);
+        } else {
+            alert("Preencha todos os campos!");
+        }
+    };
+
     return(
         <section>
             <Navbar />
@@ -75,19 +94,32 @@ export default function Configuracoes() {
                         <CardDescription className=" text-base ">Atualize seus dados</CardDescription>
                     </CardHeader>
                     <CardContent>
-                        <div className=" flex items-center justify-center gap-4 mb-4">
-                            <p className=" flex items-end">Nome</p>
-                            <Input className="w-56"/>
-                            
-                        </div>
-                        <div className=" flex items-center justify-center gap-4 mb-2">
-                            <p className=" flex items-end">Email</p>
-                            <Input className="w-56"/>
-                        </div>
+                        <form className="space-y-6" onSubmit={ReguardarInfos}>
+                            <div className="space-y-2">
+                                <Label>Nome</Label>
+                                <Input
+                                    placeholder="Nome de Usuário"
+                                    onChange={(e) =>
+                                        setNome(e.target.value)
+                                    }
+                                />
+                            </div>
+
+                            <div className="space-y-2">
+                                <Label>Email</Label>
+                                <Input
+                                    placeholder="Ex: emailcontato@contato.com"
+                                    onChange={(e) =>
+                                        setEmail(e.target.value)
+                                    }
+                                />
+                            </div>
+
+                            <Button type="submit"  className="w-full">
+                                Aplicar Mudanças
+                            </Button>
+                        </form>
                     </CardContent>
-                    <CardFooter className=" flex items-end justify-end ">
-                        <Button>Salvar alterações</Button>
-                    </CardFooter>
                 </Card>
 
             </div>
@@ -102,19 +134,31 @@ export default function Configuracoes() {
                     <Separator orientation="vertical" className="h-48 mt-4" />
 
                     <CardContent className="ml-8 pr-12 lg:ml-16 lg:pr-24 xl:ml-32 xl:pr-40">
-                    
-                        <div className=" flex items-center justify-center gap-4  mt-12 mb-4">
-                            <p className=" flex items-end">Nome</p>
-                            <Input className="w-56"/>
-                            
-                        </div>
-                        <div className=" flex items-center justify-center gap-4 mt-6 mb-4">
-                            <p className=" flex items-end">Email</p>
-                            <Input className="w-56"/>
-                        </div>
-                        <div className=" flex items-end justify-end mt-6">
-                            <Button>Salvar alterações</Button>
-                        </div>
+                        <form className="space-y-6" onSubmit={ReguardarInfos}>
+                        <div className="space-y-2">
+                                <Label>Nome</Label>
+                                <Input
+                                    placeholder="Nome de Usuário"
+                                    onChange={(e) =>
+                                        setNome(e.target.value)
+                                    }
+                                />
+                            </div>
+
+                            <div className="space-y-2">
+                                <Label>Email</Label>
+                                <Input
+                                    placeholder="Ex: emailcontato@contato.com"
+                                    onChange={(e) =>
+                                        setEmail(e.target.value)
+                                    }
+                                />
+                            </div>
+
+                            <Button type="submit"  className="w-full">
+                                Aplicar Mudanças
+                            </Button>
+                        </form>
                     </CardContent>
                 </Card>
             </div>
@@ -122,4 +166,4 @@ export default function Configuracoes() {
             <Footer />
         </section>
     )
-}
+};
